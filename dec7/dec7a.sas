@@ -62,18 +62,3 @@ proc summary data=stats5 nway missing;
  output out=final sum=;
 run;
 
-/*
-proc sort data=stats3 out=stats4;
- by descending _cnt1
-	descending _cnt2
-	descending _cnt3
-	descending _cnt4
-	descending _cnt5
-	descending _cardvalue1
-	descending _cardvalue2
-	descending _cardvalue3
-	descending _cardvalue4
-	descending _cardvalue5
-;
-run;
-*/
