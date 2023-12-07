@@ -1,3 +1,4 @@
+/* comment */
 data in;
  infile '/home/xxxx/dec7_in.txt' delimiter=';';
 
