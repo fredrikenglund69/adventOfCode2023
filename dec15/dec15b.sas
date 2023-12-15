@@ -12,7 +12,7 @@ data indata;
  lbl = scan(step,1,'=-');
  if countc(step,'-') then oper = '-';
  if countc(step,'=') then oper = '=';
- foc = input(substr(reverse(strip(step)),1,1),8.);
+ foc = input(substr(reverse(strip(step)),1,1),?8.);
  if oper = '=' then form = cats('(',lbl,'_',foc,')');
  if oper = '-' then form = '';
 
@@ -49,7 +49,7 @@ data indata;
 		nu = 0;
 		do until (scan(boxes(z),a,'_') = '');
 			valstr = substr(scan(boxes(z),a,'_'),1,1);
-			val = input(valstr,8.);
+			val = input(valstr,?8.);
 			if not missing(val) then nu + 1;
 			tot = sum(tot, val * nu * z);
 		put a= valstr= val= tot= nu=;
