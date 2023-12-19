@@ -44,7 +44,7 @@
 
 
 data indata(drop= grid: path: visits: trails:);
- infile '/home/kfen01/dec16_in_test.txt' delimiter=',';
+ infile '/home/xxxx/dec16_in_test.txt' delimiter=',';
 
  length row $&gridsize. tile dir $1 xpos ypos lasttrail pathno 8;
  array grid(&gridsize., &gridsize.) $1;
@@ -154,7 +154,7 @@ data indata(drop= grid: path: visits: trails:);
 	end;
  end;
 
- put 'Antal besök:' novisits= lasttrail=;
+ put 'Antal besÃ¶k:' novisits= lasttrail=;
 run;
 
 
