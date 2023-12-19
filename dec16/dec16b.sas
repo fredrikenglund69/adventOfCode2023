@@ -112,7 +112,7 @@
 
    maxvisits = max(maxvisits,novisits);
 
-   put 'Antal besök:' novisits= maxvisits=;
+   put 'Antal besÃ¶k:' novisits= maxvisits=;
 
 %mend;
 
@@ -131,7 +131,7 @@
 %mend;
 
 data indata(drop= grid: paths: visits: trails:);
- infile '/home/kfen01/dec16_in.txt' delimiter=',';
+ infile '/home/xxxx/dec16_in.txt' delimiter=',';
 
  length row $&gridsize. tile dir $1 xpos ypos currtrail lasttrail maxvisits 8;
  array grid(&gridsize., &gridsize.) $1;
